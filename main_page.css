@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    min-width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url(hariuttarnavodayapics/mainbg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar{
+    flex: 1;
+    text-align: right;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+.navbar ul li a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 15px;
+}
+.navbar ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: red;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.text{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text h1{
+    font-size: 62px;
+}
+.text p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: #fff;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 14px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.btn:hover{
+    border: 1px solid #f44;
+    background: #f44;
+    transition: 1s;
+}
+.btn2{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 80px;
+    margin-top: 40px;
+    font-size: 14px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.btn2:hover{
+    border: 1px solid #f44;
+    background: #f44;
+    transition: 1s;
+}
+nav .fas{
+    display: none;
+}
+
+@media(max-width: 700px){
+    img{
+        height: 150px;
+        width: 150px;
+        margin-top: 10px;
+    }
+    .text h1{
+        font-size: 24px;
+    }
+    .navbar ul li{
+        display: block;
+    }
+    .navbar{
+        position: fixed;
+        background: #f44;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fas{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .navbar ul{
+        padding: 30px;
+    }
+}
+/* our youtube videos */
+.video{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #777;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+@media(max-width: 700px){
+    .video{
+        flex-direction: column;
+    }
+    .textcollab h1{
+        font-size: 35px;
+        align-content: center;
+        padding-right: 20px;
+    }
+}
+
+.videocol{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+iframe{
+    height: 300px;
+    width: 350px;
+}
+
+/* end footer */
+.end{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: #333;
+}
+.end h3{
+    margin-bottom:5px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+.end h4{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight: 500;
+    color: #fff;
+} 
+
+/*--------------- collaborate page----------------- */
+.collaborate{
+    min-height: 450px;
+    min-width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url(hariuttarnavodayapics/collabbg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.textcollab{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.textcollab h1{
+    font-size: 50px;
+    padding-top: 100px;
+}
+.redbtn{
+    color: #f44;
+    border-color: #f44;
+}
+.redbtn:hover{
+    color: #fff;
+}
+.collabcol input, .collabcol textarea{
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 5px;
+    outline: none;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    margin-left:10%;
+}
+.row button{
+    margin-left: 10%;
+    margin-bottom: 5%;
+}

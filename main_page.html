@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hari Uttar Navodaya</title>
+    <link rel="stylesheet" href="main_page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100;1,300;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a><img src="hariuttarnavodayapics/pic1.jpg" height="200px" width="200px" style="border-radius: 50%;;"></a>
+            <div class="navbar" id="navigation">
+                <i class="fas fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="main_page.html">HOME</a></li>
+                    <li><a href="https://www.youtube.com/c/HARIUTTARNAVODAYA/featured">YOUTUBE</a></li>
+                    <li><a href="https://www.facebook.com/hariuttarnavodaya/">FACEBOOK</a></li>
+                    <li><a href="https://instagram.com/gupta08rajni?utm_medium=copy_link">INSTAGRAM</a></li>
+                    <li><a href="https://youtube.com/channel/UCzQzc4Av--lxsnBAV8vf3sg">2ND CHANNEL</a></li>
+                    <li><a href="collaborate_page.html">COLLABORATE</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showmenu()"></i>
+        </nav>
+    <div class="text">
+        <h1>HARI UTTAR NAVODAYA</h1>
+        <p>Hi Everyone, I Am Rajni.</p>
+        <div>
+        <a href="https://www.youtube.com/c/HARIUTTARNAVODAYA/featured" class="btn">Click to visit my Youtube Channel</a></div>
+        <div>
+        <a href="collaborate_page.html" class="btn2">Click to Collaborate</a></div>
+    </div> 
+    </section>
+
+    <!-- our youtube videos -->
+    <section class="video">
+        <h1>My Youtube Videos</h1>
+        <p>These are some of my youtube videos.</p>
+        <div class="youtubevideo">
+            <div class="videocol">
+                <iframe 
+                src="https://www.youtube.com/embed/DbPDAUUPNDs?autoplay=1&mute=1">
+                </iframe>
+           
+                <iframe
+                src="https://www.youtube.com/embed/adODnM1JaZc?mute=1">
+                </iframe>
+          
+                <iframe
+                src="https://www.youtube.com/embed/ahDdVCn4KUk?mute=1">
+                </iframe>
+            </div>
+            <div class="videocol">
+                <iframe 
+                src="https://www.youtube.com/embed/ZpX35DLdzT8?mute=1">
+                </iframe>
+           
+                <iframe
+                src="https://www.youtube.com/embed/62vie2codUY?mute=1">
+                </iframe>
+          
+                <iframe
+                src="https://www.youtube.com/embed/Dv_s-644TYE?mute=1">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- end footer -->
+    <section class="end">
+        <h3>Contact Information</h3>
+        <h4>Email: rajnigupta08091986@gmail.com<br>
+            website made by Anushka Gupta</h4>
+
+    </section>
+
+    <!-- javascript for side menu in phone version -->
+    <script>
+        var navigation = document.getElementById("navigation");
+
+        function showmenu(){
+            navigation.style.right="0";
+        }
+        function hidemenu(){
+            navigation.style.right="-200px";
+        }
+    </script>
+    <!----------------------------------------------->
+</body>
+</html>
